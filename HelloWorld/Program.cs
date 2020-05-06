@@ -1,12 +1,13 @@
 ﻿using System;
+using System.Runtime.CompilerServices;
 
 namespace HelloWorld
 {
     class Program
     {
 
-        public int firstNumber = 1;
-        public int secondNumber = 2;
+        public static int firstNumber = 1;
+        public static int secondNumber = 3;
 
         static void Main(string[] args)
         {
@@ -15,7 +16,8 @@ namespace HelloWorld
 
         static void PrintStatement()
         {
-            Console.WriteLine("Displaying from function");
+            int result = firstNumber + secondNumber;
+            Console.WriteLine("Result:" + result);
         }
     }
 }
