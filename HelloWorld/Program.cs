@@ -6,17 +6,18 @@ namespace HelloWorld
     class Program
     {
 
-        public static int firstNumber = 1;
+        public static int firstNumber = 3;
         public static int secondNumber = 3;
+
 
         static void Main(string[] args)
         {
-            PrintStatement();
+            int result = firstNumber + secondNumber;
+            PrintStatement(result);
         }
 
-        static void PrintStatement()
-        {
-            int result = firstNumber + secondNumber;
+        static void PrintStatement(int result)
+        {   
             Console.WriteLine("Result:" + result);
         }
     }
