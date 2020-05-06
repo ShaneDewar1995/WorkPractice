@@ -6,7 +6,12 @@ namespace HelloWorld
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Using Version control to change output");
+            PrintStatement();
+        }
+
+        static void PrintStatement()
+        {
+            Console.WriteLine("Displaying from function");
         }
     }
 }
