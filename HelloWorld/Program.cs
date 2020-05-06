@@ -1,17 +1,24 @@
 ﻿using System;
+using System.Runtime.CompilerServices;
 
 namespace HelloWorld
 {
     class Program
     {
+
+        public static int firstNumber = 3;
+        public static int secondNumber = 3;
+
+
         static void Main(string[] args)
         {
-            PrintStatement();
+            int result = firstNumber + secondNumber;
+            PrintStatement(result);
         }
 
-        static void PrintStatement()
-        {
-            Console.WriteLine("Displaying from function");
+        static void PrintStatement(int result)
+        {   
+            Console.WriteLine("Result:" + result);
         }
     }
 }
