@@ -18,7 +18,7 @@ namespace HelloWorld
 
         static void PrintStatement(int result)
         {   
-            Console.WriteLine("Result:" + result);
+            Console.WriteLine("The Result:" + result);
         }
     }
 }
